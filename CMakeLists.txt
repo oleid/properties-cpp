@@ -37,6 +37,9 @@ include_directories(
   include/
 )
 
+add_library(properties-cpp INTERFACE)
+target_include_directories(properties-cpp INTERFACE ${CMAKE_CURRENT_LIST_DIR}/include)
+
 add_subdirectory(doc)
 add_subdirectory(data)
 add_subdirectory(include)
